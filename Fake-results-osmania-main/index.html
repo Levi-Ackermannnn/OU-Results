@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Osmania University Results - 2024</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <font face="Arial" size="2"><b> BCA (CBCS) NOV/DEC-2024 RESULTS  </b></font>
+      <center><table border="1" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="80%" id="AutoNumber6" height="19">
+        <tbody><tr> <td width="100%" align="center" height="16" bgcolor="#FEFCF5"><b>
+             <font face="Arial" size="2">Enter  Hall Ticket No. :  
+              <input id="inputHall" type="number" />
+              <button id="search" onclick="inputTag()">Submit</button>
+             </font> </b></td>
+        </tr>
+        <tr><td width="100%" align="center">
+          <font face="verdana" size="2" color="#FF0000"><b> Please Enter  12 Digit Hall Ticket Number
+          Ex: 101021861001,  101021861005.  </b></font></td>
+      </tr>
+      </tbody></table>
+    </center>
+      </div>
+      <center><div class="hiddenStudentData" id="studentData">
+        <p></p>
+        <div class="studentData_profile">
+          <table border="2">
+            <tr>
+              <th colspan="4" style="text-align: center">Personal Details</th>
+            </tr>
+            <tr>
+              <td class="secondColor">Hall Ticket No.</td>
+              <td id="hallTicket">N/A</td>
+              <td class="secondColor">Gender</td>
+              <td id="gender">N/A</td>
+            </tr>
+            <tr>
+              <td class="secondColor">Name</td>
+              <td id="NameOutput">N/A</td>
+              <td class="secondColor">Phone No.</td>
+              <td id="phoneno">N/A</td>
+            </tr>
+            <tr>
+              <td class="secondColor">Course</td>
+              <td id="course">N/A</td>
+              <td class="secondColor">Medium</td>
+              <td id="medium">N/A</td>
+            </tr>
+          </table>
+        </div>
+        <div class="studentData_subjects">
+          <table border="2">
+            <tr>
+              <th colspan="4">Marks Details</th>
+            </tr>
+            <tr class="secondColor">
+              <td>Code</td>
+              <td>Subject</td>
+              <td>Credits</td>
+              <td>Grade Secured</td>
+            </tr>
+            <tr>
+              <td id="paper_id01"></td>
+              <td id="Subject01"></td>
+              <td id="creadits01"></td>
+              <td id="grade1"></td>
+            </tr>
+            <tr>
+              <td id="paper_id02"></td>
+              <td id="Subject02"></td>
+              <td id="creadits02"></td>
+              <td id="grade2"></td>
+            </tr>
+            <tr>
+              <td id="paper_id03"></td>
+              <td id="Subject03"></td>
+              <td id="creadits03"></td>
+              <td id="grade3"></td>
+            </tr>
+            <tr>
+              <td id="paper_id04"></td>
+              <td id="Subject04"></td>
+              <td id="creadits04"></td>
+              <td id="grade4"></td>
+            </tr>
+            <tr>
+              <td id="paper_id05"></td>
+              <td id="Subject05"></td>
+              <td id="creadits05"></td>
+              <td id="grade5"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="studentData_gpa">
+          <table border="2">
+            <tr>
+              <th colspan="2">Result</th>
+            </tr>
+            <tr>
+              <td>Semeter</td>
+              <td>Result with SGPA</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td id="gpa"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="print_page">
+          <p>
+            This information is provided to the candidate on his/her online
+            request and is only a prototype list.
+          </p>
+          <div class="button-group">
+            <a href="/assets/meme1.gif"
+              ><button style="color: red">Print page</button></a
+            >
+            <a href="/assets/meme2.jpg" style="margin-left: 20px"
+              ><button style="width: 130px; color: red">Download PDF</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
